@@ -4,7 +4,7 @@ import NotFound from '../pages/NotFound';
 import renderWithRouter from '../renderWithRouter';
 
 describe('Testando componente NotFound.js', () => {
-  it('h2 com texto About Pokédex', () => {
+  it('h2 com texto Page requested not found', () => {
     renderWithRouter(<NotFound />);
     const heading = screen.getByRole('heading', { name: /Page requested not found/i });
     expect(heading).toBeDefined();
